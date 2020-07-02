@@ -14,6 +14,7 @@
             {
                 margin: 0;
                 padding: 0;
+                box-sizing: border-box;
             }
             .navbar
             {
@@ -60,8 +61,19 @@
                 text-align: center;
                 padding-bottom: 10px;
             }
+
+            @media screen and (max-width: 600px)
+            {
+                .header-text 
+                {
+                    display: none;
+                }
+            }
+
             .header-text h1
             {
+                position: relative;
+                animation: theheading 3s;
                 text-transform: uppercase;
                 letter-spacing: 10px;
                 color: white;
@@ -69,10 +81,19 @@
             }
             .header-text h3
             {
+                position: relative;
+                animation: theheading 3s;
                 text-transform: uppercase;
                 font-family: 'Open Sans';
                 margin: -25px 0px 20px 0px;
-                color: rgba(255, 255, 255 , 0.8);
+                color: rgba(255, 255, 255 , 0.9);
+            }
+            
+            @keyframes theheading 
+            {
+                0% {opacity: 1;}
+                50% {opacity:0.5;}
+                100% {opacity: 1;}    
             }
 
             .all-team-data
@@ -89,11 +110,12 @@
 
             .flip-card-section
             {
-                margin: 20px 5px 0px 20px;
+                margin: 30px 5px 0px 120px;
             }
             .flip-card 
             {
                 margin-right: 50px;
+                margin-bottom: 30px;
                 display: inline-block;
                 background-color: transparent;
                 width: 250px;
@@ -199,6 +221,54 @@
                     </div>
                 </div>
 
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Aaryan.jpg" alt="Aaryan" style="width:300px;height:300px;">
+                                <div class="container">
+                                    <h4><b>Aaryan Sharma</b></h4>
+                                </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1><b>Name : </b>Aaryan Sharma</h1> 
+                            <p><b>Branch : </b>C.S.E.</p> 
+                            <p><b>Year : </b>Third</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Aaryan.jpg" alt="Aaryan" style="width:300px;height:300px;">
+                                <div class="container">
+                                    <h4><b>Aaryan Sharma</b></h4>
+                                </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1><b>Name : </b>Aaryan Sharma</h1> 
+                            <p><b>Branch : </b>C.S.E.</p> 
+                            <p><b>Year : </b>Third</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="Aaryan.jpg" alt="Aaryan" style="width:300px;height:300px;">
+                                <div class="container">
+                                    <h4><b>Aaryan Sharma</b></h4>
+                                </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h1><b>Name : </b>Aaryan Sharma</h1> 
+                            <p><b>Branch : </b>C.S.E.</p> 
+                            <p><b>Year : </b>Third</p>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
